@@ -40,7 +40,7 @@ if uploaded_file:
         
         for index, row in df.iterrows():
             st.write(f"문제 {index + 1}: {row['문제']}")
-            st.write(f"정답: {row['답']}, 사용자 답: {row['사용자 답']}, 결과: {row['결과']}")
+            st.write(f":smile:정답: {row['답']}, 사용자 답: {row['사용자 답']}, 결과: {row['결과']}")
         
         st.write(f"총 {len(df)}문제 중 {total_correct}개가 정답입니다.")
 
