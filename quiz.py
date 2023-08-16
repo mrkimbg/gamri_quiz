@@ -52,6 +52,6 @@ if uploaded_file:
 
         # 엑셀 다운로드
         towrite = io.BytesIO()
-        downloaded_file = df.to_excel(towrite, encoding='utf-8', index=False, engine='openpyxl')
+        downloaded_file = df.to_excel(towrite, index=False, engine='openpyxl')
         towrite.seek(0)
         st.download_button("결과 파일 다운로드", towrite, file_name, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
