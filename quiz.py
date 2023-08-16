@@ -22,7 +22,7 @@ if uploaded_file:
         st.write(f"문제 {index + 1}: {row['문제']}")
         options = ["None"] + [row['보기1'], row['보기2'], row['보기3'], row['보기4']]
         # answer = st.radio(f"문제 {index + 1}의 답 선택:", options)
-        answer = st.radio(f"문제 {index + 1}의 답을 선택하세요.", options)
+        answer = st.radio(f"{index + 1}번째 문제의 답을 선택하세요.", options)
 
         if answer != "None":
             user_answers.append(options.index(answer))
