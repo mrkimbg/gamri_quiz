@@ -22,7 +22,7 @@ if uploaded_file:
         st.write(f"문제 {index + 1}: {row['문제']}")
         
         if pd.notna(row["image_path"]):
-            full_image_path = os.path.join("image", row["image_path"] + ".png")
+            full_image_path = os.path.join("images", row["image_path"] + ".png")
             st.image(full_image_path)
 
         options = ["None"] + [row['보기1'], row['보기2'], row['보기3'], row['보기4']]
